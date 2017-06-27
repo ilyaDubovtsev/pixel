@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>kokokoko</h1>
+ {% for order in orders %}
+     <div>
+            <p>published: {{ order.sended_date }}</p>
+            <h1><a href="">{{order.email }}</a></h1>
+            <p>{{ order.text|linebreaksbr }}</p>
+        </div>
+{#    {{ order }}#}
+ {% endfor %}
+</body>
+</html>
