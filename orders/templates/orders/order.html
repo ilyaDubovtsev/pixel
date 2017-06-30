@@ -1,0 +1,335 @@
+{% extends 'orders/base.html' %}
+{% load static %}
+{% load bootstrap3 %}
+
+{% block content %}
+	<!-- Start Hero Section
+	================================================== -->
+	<section id="hero" class="section">
+		<div class="container">
+			<div class="row">
+
+				<div class="col-md-5">
+					<div class="lp-element animate" data-animate="fadeInLeft">
+						<h1>Товар недели<span class="lighter"></span></h1>
+						<strike style="color:red; font-size: xx-large;">1500 РУБ</strike>
+						<h2>500 РУБ!!!</h2>
+						<p class="lead">Это лучший подарок, который не просто упростит вашу жизнь, а перенесет ваше бла-бла-бла-бла-бла <strong>на новый уровень</strong></p>
+						<p><a class="btn btn-default btn-lg" role="button">Заказать сейчас!</a>
+					</div>
+				</div>
+				<div class="col-md-7"></div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================================================
+	End Hero -->
+
+	<!-- Start Features
+	================================================== -->
+	<section id="features" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<!-- Title -->
+					<div class="overview animate" data-animate="flipInX">
+						<h3 class="section-title"><strong><span class="lighter"></span></strong> PiXel</h3>
+						<p class="lead"> предлагает Вам широкий спектр услуг - от создания макета будущей продукции <br /><strong>до полной ее реализации в жизнь!</strong> </p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInRight">
+						<span class="glyphicons white picture"><i></i></span>
+						<h3>Листовки, буклеты, плакаты, афиши</h3>
+						<p>Краткое описание услуги</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInY">
+						<span class="glyphicons white flag"><i></i></span>
+						<h3>Наружная реклама</h3>
+						<p>вывески, световые короба, информационные стенды и т.д</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInX">
+						<span class="glyphicons white t-shirt"><i></i></span>
+						<h3>Кружки, тарелки, кепки, майки</h3>
+						<p>Краткое описание услуги</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInLeft">
+						<span class="glyphicons white file"><i></i></span>
+						<h3>Ризография</h3>
+						<p>Краткое описание услуги описание услуги описаниеие</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+
+				<!-- 2nd ROW -->
+
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInX">
+						<span class="glyphicons white book"><i></i></span>
+						<h3>Книги</h3>
+						<p>Краткое описание услуги описание услуги описаниеие</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInLeft">
+						<span class="glyphicons white magnet"><i></i></span>
+						<h3>Магниты</h3>
+						<p>Краткое описание услуги описание услуги описаниеие</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="fadeInRight">
+						<span class="glyphicons white cup"><i></i></span>
+						<h3>Необычные сувениры</h3>
+						<p>Краткое описание услуги описание услуги описаниеие</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<div class="service-block animate" data-animate="flipInY">
+						<span class="glyphicons white edit"><i></i></span>
+						<h3>Дизайн</h3>
+						<p>Краткое описание услуги описание услуги описаниеие</p>
+						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================================================
+	End Features -->
+
+	<!-- Start Gallery Block
+	================================================== -->
+	<section id="gallery" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 sol-sm-12">
+					<div class="overview animate" data-animate="flipInY">
+						<h3 class="section-title"><strong>Наши</strong> работы</h3>
+						<p class="lead">Бла-бла-бла-бла-бла-бла-бла-бла-бла. Все это для вас</p>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<a href="{% static 'orders/images/1.png' %}" title="U8 во все красе">
+						<img src="{% static 'orders/images/1.png' %}" alt="Mooqa-U8" class="img-rounded image-responsive animate" data-animate="fadeIn">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<a href="{% static 'orders/images/2.png' %}" title="Белый вариант">
+						<img src="{% static 'orders/images/2.png' %}" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<a href="{% static 'orders/images/3.png' %}" title="Красный вариант">
+						<img src="{% static 'orders/images/3.png' %}" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-4 col-xs-6">
+					<a href="{% static 'orders/images/4.png' %}" title="Черный вариант">
+						<img src="{% static 'orders/images/4.png' %}" alt="Turtle" class="img-rounded image-responsive animate" data-animate="fadeIn">
+					</a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================================================
+	End Gallery Blcok -->
+
+	<!-- Start Text Block
+	================================================== -->
+	<section id="faq" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 sol-sm-12">
+					<div class="overview animate" data-animate="flipInY">
+						<h3 class="section-title">Часто задаваемые вопросы.</h3>
+						<p class="lead">Если у вас возникают вопросы, задавайте их сами себе...</p>
+					</div>
+				</div>
+				<div class="col-md-12 col-sm-12">
+					<div class="faq-block animate" data-animate="fadeInLeft">
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+						          Часто задаваемый вопрос ?
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseOne" class="panel-collapse collapse in">
+						      <div class="panel-body">
+						        Ответ на часто задаваемый вопрос
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+						         Часто задаваемый вопрос ?
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseTwo" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Ответ на часто задаваемый вопрос
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+						           Часто задаваемый вопрос ?
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseThree" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Ответ на часто задаваемый вопрос
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+						          Часто задаваемый вопрос ?
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseFour" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Ответ на часто задаваемый вопрос
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+						          Часто задаваемый вопрос ?
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="collapseFive" class="panel-collapse collapse">
+						      <div class="panel-body">
+						        Ответ на часто задаваемый вопрос
+						      </div>
+						    </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- ==================================================
+	End Text Blcok -->
+
+	<!-- Start Newsletter Block
+	================================================== -->
+	<section id="slider" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div id="Carousel" class="carousel slide">
+					        <ol class="carousel-indicators">
+					            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+					            <li data-target="#Carousel" data-slide-to="1"></li>
+					            <li data-target="#Carousel" data-slide-to="2"></li>
+					        </ol>
+
+					        <div class="carousel-inner">
+					            <div class="item active animate" data-animate="flipInY">
+					                <blockquote>
+					                  <p class="lead">Пасаны ваще ребята.</p>
+					                  <small>Сергей С. - Автолюбитель</small>
+					                </blockquote>
+					            </div>
+								<div class="item animate" data-animate="flipInY">
+								 	<blockquote>
+								 	  <p class="lead">PiXel однажды спас мне жизнь.</p>
+								 	  <small>Лена Н. - Студент</small>
+								 	</blockquote>
+								</div>
+								<div class="item animate" data-animate="flipInY">
+										<blockquote>
+								     	<p class="lead">Безделье - игрушка дьявола эжи.... Шаа - Таа!</p>
+								     	<small>Кама-пуля К. - Домохозяин</small>
+								 	</blockquote>
+								</div>
+								<div class="item animate" data-animate="flipInY">
+										<blockquote>
+								     	<p class="lead">Все отлично!</p>
+								     	<small>Александр У. - Бизнесмен</small>
+								 	</blockquote>
+								</div>
+					        </div>
+
+					        <a class="left carousel-control" href="#Carousel" data-slide="prev">
+					            <span class="glyphicon glyphicon-chevron-left"></span>
+					        </a>
+					        <a class="right carousel-control" href="#Carousel" data-slide="next">
+					            <span class="glyphicon glyphicon-chevron-right"></span>
+					        </a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================================================
+	End Slider Blcok -->
+
+	<!-- Start Newsletter Block
+	================================================== -->
+	<section id="newsletter" class="section">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="overview animate" data-animate="flipInY">
+						<h3 class="section-title"><strong>Закажи сейчас!</strong></h3>
+						<p class="lead">Все плюсы на лицо. Минусов нет. Зачем думать и тратить время?</p>
+					</div>
+					<form role="form" class="animate" data-animate="fadeInUp">
+						<div class="form-group">
+			            	<input type="email" class="form-control input-lg" placeholder="Ваша почта">
+			          	</div>
+			          	<div class="form-group">
+			            	<input type="tel" class="form-control input-lg" placeholder="Телефон">
+			          	</div>
+			          	<div class="form-group">
+			          		<label for="address" class="col-sm-2 control-label">Адрес</label>
+			            	<textarea namr="address" class="form-control" rows="3"></textarea>
+			          	</div>
+			          	<div class="form-group">
+			          		<small>Нажимая на кнопку "Заказать!" вы подтверждаете что прочитали и согласны с пользовательским соглашением [ПС] и политикой конфиденциальности сайта [КС] и будете перенаправлены на страницу оплаты заказа.</small>
+			          	</div>
+			          	<button class="btn btn-lg btn-default" type="button">Заказать!</button>
+		          	</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- ==================================================
+	End Newsletter Blcok -->
+{% endblock content %}
+
+
