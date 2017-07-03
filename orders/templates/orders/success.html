@@ -1,0 +1,82 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	    <!-- Meta, title, CSS, favicons, etc. -->
+	    <meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title>
+
+		    PiXel.Типография.Сувениры.Полиграфия.Ижевск
+
+		</title>
+
+		<!-- Bootstrap core CSS -->
+		<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+		<!-- Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&amp;subset=cyrillic,cyrillic-ext' rel='stylesheet' type='text/css'>
+        <!-- Rocket extras -->
+        <link href="{% static 'orders/css/bootstrap.css' %}" rel="stylesheet">
+        <link href="{% static 'orders/css/animate.css' %}" rel="stylesheet">
+        <link href="{% static 'orders/css/glyphicons.css' %}" rel="stylesheet">
+        <link href="{% static 'orders/css/flipclock.css' %}" rel="stylesheet">
+        <link href="{% static 'orders/css/prettyPhoto.css' %}" rel="stylesheet">
+        <link href="{% static 'orders/css/style.css' %}" rel="stylesheet">
+        <!-- Favicons -->
+{#      TODO: разобраться с фавиконами#}
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../docs-assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="shortcut icon" href="../docs-assets/ico/favicon.png">
+	</head>
+	<body>
+        <!-- Start Header
+        ================================================== -->
+        <header id="header" class="navbar navbar-inverse navbar-fixed-top" role="banner">
+          <div class="container">
+            <div class="navbar-header">
+              <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+                <span class="sr-only">Навигация</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <!-- Your Logo -->
+
+              <a href="../../../" class="navbar-brand">
+                <!-- <span class="lighter"> -->
+                    <img src="{% static 'orders/images/pixel_logo.png' %}">
+                <!-- </span> -->
+              </a>
+            </div>
+            <nav class="collapse navbar-collapse bs-navbar-collapse navbar-right" role="navigation">
+              <ul class="nav navbar-nav">
+                <li>
+                  <a href=""></a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </header>
+        <!-- ==================================================
+        End Header -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-2">
+                </div>
+                <div class="col-md-6 col-sm-8 jumbotron" style="margin-top: 25%; height: 400px;">
+                    <h1>Спасибо за заказ!</h1>
+                    <p>Мы обязательно с вами свяжемся.</p>
+
+                </div>
+                <div class="col-md-3 col-sm-2">
+                </div>
+            </div>
+        </div>
+	</body>
+</html>

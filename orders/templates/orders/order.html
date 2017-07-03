@@ -1,6 +1,6 @@
 {% extends 'orders/base.html' %}
 {% load static %}
-{% load bootstrap3 %}
+
 
 {% block content %}
 	<!-- Start Hero Section
@@ -15,7 +15,7 @@
 						<strike style="color:red; font-size: xx-large;">1500 РУБ</strike>
 						<h2>500 РУБ!!!</h2>
 						<p class="lead">Это лучший подарок, который не просто упростит вашу жизнь, а перенесет ваше бла-бла-бла-бла-бла <strong>на новый уровень</strong></p>
-						<p><a class="btn btn-default btn-lg" role="button">Заказать сейчас!</a>
+						<p><a href="#newsletter" class="btn btn-default btn-lg" role="button">Заказать сейчас!</a>
 					</div>
 				</div>
 				<div class="col-md-7"></div>
@@ -39,7 +39,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="fadeInRight">
-						<span class="glyphicons white picture"><i></i></span>
+						<span class="glyphicon glyphicon-picture white "><i style="color: white; content: '\e139"></i></span>
 						<h3>Листовки, буклеты, плакаты, афиши</h3>
 						<p>Краткое описание услуги</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -47,7 +47,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="flipInY">
-						<span class="glyphicons white flag"><i></i></span>
+						<span class="glyphicon white glyphicon-flag"><i></i></span>
 						<h3>Наружная реклама</h3>
 						<p>вывески, световые короба, информационные стенды и т.д</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -55,7 +55,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="flipInX">
-						<span class="glyphicons white t-shirt"><i></i></span>
+						<span><i class="glyphicon glyphicon-glass white"></i></span>
 						<h3>Кружки, тарелки, кепки, майки</h3>
 						<p>Краткое описание услуги</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -63,18 +63,19 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="fadeInLeft">
-						<span class="glyphicons white file"><i></i></span>
+						<span class="glyphicon white glyphicon-file"><i></i></span>
 						<h3>Ризография</h3>
 						<p>Краткое описание услуги описание услуги описаниеие</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
 					</div>
 				</div>
-
+            </div>
+            <div class="row">
 				<!-- 2nd ROW -->
 
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="flipInX">
-						<span class="glyphicons white book"><i></i></span>
+						<span class="glyphicon white glyphicon-book"><i></i></span>
 						<h3>Книги</h3>
 						<p>Краткое описание услуги описание услуги описаниеие</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -82,7 +83,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="fadeInLeft">
-						<span class="glyphicons white magnet"><i></i></span>
+						<span class="glyphicon white glyphicon-magnet"><i></i></span>
 						<h3>Магниты</h3>
 						<p>Краткое описание услуги описание услуги описаниеие</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -90,7 +91,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="fadeInRight">
-						<span class="glyphicons white cup"><i></i></span>
+						<span class="glyphicon white glyphicon-piggy-bank"><i></i></span>
 						<h3>Необычные сувениры</h3>
 						<p>Краткое описание услуги описание услуги описаниеие</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -98,7 +99,7 @@
 				</div>
 				<div class="col-md-3 col-sm-6">
 					<div class="service-block animate" data-animate="flipInY">
-						<span class="glyphicons white edit"><i></i></span>
+						<span class="glyphicon white glyphicon-edit"><i></i></span>
 						<h3>Дизайн</h3>
 						<p>Краткое описание услуги описание услуги описаниеие</p>
 						<!-- <button type="button" class="btn btn-info btn-md">Learn More</button> -->
@@ -308,22 +309,24 @@
 						<h3 class="section-title"><strong>Закажи сейчас!</strong></h3>
 						<p class="lead">Все плюсы на лицо. Минусов нет. Зачем думать и тратить время?</p>
 					</div>
-					<form role="form" class="animate" data-animate="fadeInUp">
-						<div class="form-group">
-			            	<input type="email" class="form-control input-lg" placeholder="Ваша почта">
-			          	</div>
-			          	<div class="form-group">
-			            	<input type="tel" class="form-control input-lg" placeholder="Телефон">
-			          	</div>
-			          	<div class="form-group">
-			          		<label for="address" class="col-sm-2 control-label">Адрес</label>
-			            	<textarea namr="address" class="form-control" rows="3"></textarea>
-			          	</div>
-			          	<div class="form-group">
-			          		<small>Нажимая на кнопку "Заказать!" вы подтверждаете что прочитали и согласны с пользовательским соглашением [ПС] и политикой конфиденциальности сайта [КС] и будете перенаправлены на страницу оплаты заказа.</small>
-			          	</div>
-			          	<button class="btn btn-lg btn-default" type="button">Заказать!</button>
-		          	</form>
+
+                    <form method="post" action="/new_order" role="form" class="animate" data-animate="fadeInUp"  >{% csrf_token %}
+                        <div class="form-group">
+                            <input name="email" type="email" class="form-control input-lg" placeholder="Ваша почта">
+                        </div>
+                        <div class="form-group">
+                            <input name="phone" type="phone" class="form-control input-lg" placeholder="Телефон">
+                        </div>
+                        <div class="form-group">
+                            <label for="text" class="col-sm-2 control-label">Сообщение</label>
+                            <textarea name="text" class="form-control" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <small>Нажимая на кнопку "Заказать!" вы подтверждаете что прочитали и согласны с пользовательским соглашением [ПС] и политикой конфиденциальности сайта [КС] и будете перенаправлены на страницу оплаты заказа.</small>
+                        </div>
+                        <button class="btn btn-lg btn-default" type="submit">Заказать!</button>
+                    </form>
+
 				</div>
 			</div>
 		</div>

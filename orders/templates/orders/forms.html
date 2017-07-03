@@ -1,0 +1,20 @@
+{% extends 'orders/order.html' %}
+
+{% block forms %}
+<form method="post" action="/new_order" role="form" class="animate" data-animate="fadeInUp"  >{% csrf_token %}
+    <div class="form-group">
+        <input name="email" type="email" class="form-control input-lg" placeholder="Ваша почта">
+    </div>
+    <div class="form-group">
+        <input name="phone" type="phone" class="form-control input-lg" placeholder="Телефон">
+    </div>
+    <div class="form-group">
+        <label for="text" class="col-sm-2 control-label">Сообщение</label>
+        <textarea name="text" class="form-control" rows="3"></textarea>
+    </div>
+    <div class="form-group">
+        <small>Нажимая на кнопку "Заказать!" вы подтверждаете что прочитали и согласны с пользовательским соглашением [ПС] и политикой конфиденциальности сайта [КС] и будете перенаправлены на страницу оплаты заказа.</small>
+    </div>
+    <button class="btn btn-lg btn-default" type="submit">Заказать!</button>
+</form>
+{% endblock forms %}

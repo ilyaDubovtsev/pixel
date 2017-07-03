@@ -15,9 +15,13 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
+from orders import views
 import orders.urls
+
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', include('orders.urls'))
+    url(r'^', include('orders.urls')),
+    url(r'^success/', views.success_order, name='success_order'),
+    url(r'^new_order', views.new_order, name='new_order')
 ]
